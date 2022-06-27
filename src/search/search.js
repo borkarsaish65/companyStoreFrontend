@@ -120,6 +120,7 @@ function Search() {
             companyCIN,companyName
         })
         setSearchFieldText(companyName)
+        setSearchResult([]);
     }
 
     function debounceSearch(){
