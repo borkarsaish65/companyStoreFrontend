@@ -1,0 +1,22 @@
+.company-listing-container {
+    max-width:70%;
+    margin: auto;
+    margin-top: 100px;
+}
+.company-listing-container table {
+    margin: auto;
+    width: 90%;
+}
+
+th{
+    border-bottom: 1px solid #0000003b;
+}
+th,td {
+    height: 20px;
+    width: auto;
+    text-align:left;
+
+}
+td{
+    padding:5px 10px;
+}

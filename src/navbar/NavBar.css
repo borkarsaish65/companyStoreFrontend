@@ -1,0 +1,9 @@
+.navbar {
+    padding:1rem;
+    border-bottom: 1px solid #0000003b;
+}
+.link {
+    text-decoration: none;
+    padding:1px 10px;
+    font-size: 1.2rem;
+}

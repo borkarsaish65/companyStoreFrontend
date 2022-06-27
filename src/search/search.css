@@ -1,0 +1,46 @@
+.container {
+    height: 90vh;
+}
+.d-flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.center-everything{
+    justify-content: center;
+    align-items: center;
+}
+
+.container .searchBox {
+    padding:10px 5px;
+    margin:0 10px;
+    min-width:300px;
+}
+.container input[type=submit]{
+    background-color: #0483aa;
+    border-radius: 5px;
+    border:none;
+    color: white;
+    padding:10px 10px;
+    margin:0 10px;
+    cursor: pointer;
+  }
+.list-group {
+    padding:0;
+    margin:0;
+    position: relative;
+    left: -41px;
+    min-width: 313px;
+}
+.list-group li {
+    list-style: none;
+    border:1px solid black;
+    padding:10px 5px;
+
+}
+.list-group li:hover {
+    background: #0483aa;
+    color:white;
+
+}
