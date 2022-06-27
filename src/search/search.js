@@ -21,7 +21,7 @@ function searchCompany(searchText,updateResult){
       
       var config = {
         method: 'post',
-        url: 'https://company-store-backend.herokuapp.com/search-company',
+        url: '/search-company',
         headers: { 
           'Content-Type': 'application/json'
         },
@@ -62,7 +62,7 @@ function Search() {
           
           var config = {
             method: 'post',
-            url: 'https://company-store-backend.herokuapp.com/store-company',
+            url: '/store-company',
             headers: { 
               'Content-Type': 'application/json'
             },
@@ -96,7 +96,7 @@ function Search() {
 
         var config = {
             method: 'get',
-            url: 'https://company-store-backend.herokuapp.com/list-company'
+            url: '/list-company'
           };
           
           axios(config)
