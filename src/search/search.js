@@ -14,16 +14,20 @@ function searchCompany(searchText,updateResult){
         return undefined;
     }
 
-    var data = new FormData();
-    data.append('search', searchText);
-    data.append('filter', 'company');
-    
-    var config = {
-      method: 'post',
-      url: 'https://www.zaubacorp.com/custom-search',
-      data : data
-    };
-    
+
+    var data = JSON.stringify({
+        "search": searchText
+      });
+      
+      var config = {
+        method: 'post',
+        url: '/search-company',
+        headers: { 
+          'Content-Type': 'application/json'
+        },
+        data : data
+      };
+
     axios(config)
     .then(function (response) {
         updateResult(response.data)
@@ -92,7 +96,7 @@ function Search() {
 
         var config = {
             method: 'get',
-            url: 'http://localhost:8081/list-company'
+            url: '/list-company'
           };
           
           axios(config)
