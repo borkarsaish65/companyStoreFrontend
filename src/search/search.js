@@ -20,7 +20,7 @@ function searchCompany(searchText,updateResult){
     
     var config = {
       method: 'post',
-      url: '/custom-search',
+      url: 'https://www.zaubacorp.com/custom-search',
       data : data
     };
     
